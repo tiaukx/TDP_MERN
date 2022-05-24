@@ -9,6 +9,18 @@
         <link rel="stylesheet" href="./style.css">
         <link rel="stylesheet" href="./style_pseudo.css">
 
+        <style>
+            fieldset > input, textarea, select {
+                display: block;
+            }
+            fieldset > input[type="checkbox"] {
+                display: inline;
+            }
+            fieldset > input[type="radio"] {
+                display: inline;
+            }
+        </style>
+
     </head>
     <body>
         <h1><img src="./nyan.gif" alt="nyan" id="nyanID" style="width:3%;height:3%;"> Sign-Up Form Example <img src="./nyan.gif" alt="nyan" id="nyanID" style="width:3%;height:3%;"></h1>
@@ -21,30 +33,25 @@
         <legend>Your details</legend>
             <label for="textID">Name: </label>
             <input type="text" name="textName" autofocus="true" required placeholder="Please enter your name" id="textID">
-            <br>
 
             <label for="emailID">Email: </label>
             <input type="email" name="emailName" autofocus="true" required placeholder="Please enter your email address" id="emailID">
-            <br>
 
             <label for="numberID">Number: </label>
             <input type="number" min="1" max="20" name="numberName" autofocus="true" required placeholder="Please enter your number" id="numberID">
-            <br>
 
             <label for="addressID">Address: </label>
             <textarea name="address" autofocus="true" required id="addressName" cols="18" rows="4"></textarea>
-            <br>
 
             <label for="dateID">When is your birthday: </label>
             <input type="date" name="dateName" autofocus="true" required id="dateID">
-            <br>
 
             <label for="genderID">Gender: </label>
             <input type="radio" name="checkName" id="genderID" value="Male">Male
             <input type="radio" name="checkName" id="genderID" value="Female">Female
             <input type="radio" name="checkName" id="genderID" value="Other">Other
-            <br>
         </fieldset>
+
         <fieldset>
             <legend>About you</legend>
             <label for="workID">Where do you work: </label>
@@ -55,7 +62,6 @@
                 <option value="Other">Other</option>
             </select>
             <br>
-
             <label for="animalID">Animals you like: </label>
             <input type="checkbox" name="animalName" id="animalID" value="Cat"/>Cat
             <input type="checkbox" name="animalName" id="animalID" value="Dog"/>Dog
@@ -64,16 +70,12 @@
             <input type="checkbox" name="animalName" id="animalID" value="Snake"/>Snake
             <input type="checkbox" name="animalName" id="animalID" value="None"/>None
             <br>
-
             <label for="colorID">What is your favourite colour: </label>
             <input type="color" name="colorName" id="colorID">
             <br>
-
-
-
             <label for="rateID">How much do you like HTML: </label>
             <input type="range" min="1" max="10" name="rateName" id="rateID" value="5">
-            <br>
+
         </fieldset>
         
             <button type="reset">Reset</button>

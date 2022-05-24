@@ -6,7 +6,7 @@ body {
 }
 
 h1 {
-    text-shadow: 7px 7px rgb(26, 27, 27);
+    text-shadow: 7px 7px rgb(66, 83, 83);
 }
 
 img {
@@ -22,7 +22,7 @@ table td {
 }
 
 table {
-    border: 2px solid rgb(248, 218, 135);
+    border: 5px solid rgb(248, 218, 135);
 }
 
 fieldset > legend {
@@ -41,4 +41,32 @@ h1 + p {
 
 th:hover, td:hover {
     background-color: darksalmon;
+}
+
+@keyframes textChange{
+    0% {color: white;}
+    12.5% {color: red;}
+    25% {color: orange;}
+    37.5% {color: yellow;}
+    50% {color: greenyellow;}
+    62.50% {color: green;}
+    75% {color: blue;}
+    87.50% {color: indigo;}
+    100% {color: violet;}
+}
+
+h1 {
+    animation-name: textChange;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+}
+
+fieldset {
+    text-align: left;
 }

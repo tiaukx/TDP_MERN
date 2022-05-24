@@ -37,7 +37,7 @@ footer::after {
     content: url(./sad.jpg);
 }
 
-h1:hover {
+h1, h2 {
     background-color: rgb(15, 15, 14);
 }
 
