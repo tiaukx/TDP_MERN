@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "0ae76f3d-2667-4680-aaf6-9be197363e75",
+		"name": "mongoose_practice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:4494/movies/readAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4494/movies/readAll",
+					"host": [
+						"localhost"
+					],
+					"port": "4494",
+					"path": [
+						"movies",
+						"readAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4494/movies/delete/62a1b40cab417fff707c9955",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:4494/movies/delete/62a1b40cab417fff707c9955",
+					"host": [
+						"localhost"
+					],
+					"port": "4494",
+					"path": [
+						"movies",
+						"delete",
+						"62a1b40cab417fff707c9955"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:4494/movies/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"name\" : \"Starship Troopers\",\r\n        \"description\" : \"Johnny Rico completes his graduation and joins the Mobile Infantry to serve the nation. Soon, he finds himself fighting against alien bugs that are hell-bent on destroying life on Earth.\",\r\n        \"minsLength\" : 129\r\n    },\r\n    {\r\n        \"name\" : \"Sorry to Bother You\",\r\n        \"description\" : \"Telemarketer Cassius Green discovers an alluring method towards success. However, owing to his greed, he ends up fading away from his family and friends.\",\r\n        \"minsLength\" : 112\r\n    },\r\n    {\r\n        \"name\" : \"Midsommar\",\r\n        \"description\" : \"A couple travels to Northern Europe to visit a rural hometown's fabled Swedish mid-summer festival. What begins as an idyllic retreat quickly devolves into an increasingly violent and bizarre competition at the hands of a pagan cult.\",\r\n        \"minsLength\" : 148\r\n    },\r\n    {\r\n        \"name\" : \"Inside\",\r\n        \"description\" : \"Comedian Bo Burnham shoots and performs a comedy special over the course of a year, all alone, with no crew or audience.\",\r\n        \"minsLength\" : 63\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4494/movies/create",
+					"host": [
+						"localhost"
+					],
+					"port": "4494",
+					"path": [
+						"movies",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

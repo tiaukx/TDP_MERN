@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <title>HTML</title>
+        <meta charset="UTF-8">
+        <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+        <meta name=Author content="Tia Foster">
+
+        <script src="QA_Exercises.js"></script>
+
+    </head>
+    <body>
+
+        <h1>QA Exercise</h1>
+        <p>This is the page to test QA Exercises.</p>    
+        <br>
+
+        <a href="./index.html">Index</a>
+
+        <br><br>
+
+        <fieldset>
+
+            <legend>Counter</legend>
+                <input type="number" value="0" id="counter" readonly>
+                <br><br>
+
+                <button onclick="updateCounter()">-5</button>
+                <button onclick="updateCounter()">-1</button>
+                <button onclick="updateCounter()">R</button>
+                <button onclick="updateCounter()">+1</button>
+                <button onclick="updateCounter()">+5</button>
+
+                <section id="output"></section>
+
+        </fieldset>
+
+        <br><br>
+
+        <div>
+
+            <script src="./QA_Exercises.js"></script>
+
+            <button class="insertButtonID" onclick="insertPara()">Insert Paragraph</button>
+            <br><br>
+
+            <label for="textID">New Text: </label>
+            <input type="text" placeholder="Please enter your new text" id="textID"></input>
+
+            <button class="changeButtonID" onclick="changePara()">Change Paragraph</button>
+            <br><br>
+
+            <button class="deleteButtonID" onclick="deletePara()">Delete Paragraph</button>
+
+
+        </div>
+
+        <script src="./counter.js"></script>
+
+
+    </body>
+    </html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <title>HTML</title>
+        <meta charset="UTF-8">
+        <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+        <meta name=Author content="Tia Foster">
+
+        <script src="JS_Practice.js"></script>
+        <script src="QA_Exercises.js"></script>
+
+    </head>
+    <body>
+        <h1>Index</h1>
+        <p>This is the index page.</p>    
+        <br>
+        <a href="./QA_Exercise.html">QA Exercise Practice</a>
+        <br>
+        <a href="./calculator.html">Calculator</a>
+
+        <br>
+        <br>
+        <button class="buttonID" onclick="increaseAge()">Increase Age</button>
+        <br>
+        <br>
+
+        <fieldset> 
+            <legend>Add an Object</legend>
+                <form onsubmit="return addPerson(this)">
+                    <label for="nameID">Name: </label>
+                    <input type="text" name="textName" autofocus="true" required placeholder="Please enter your name" class="nameID">
+
+                    <label for="numberID">Age: </label>
+                    <input type="number" min="1" max="3" name="numberName" autofocus="true" required placeholder="Please enter your age" class="numberID">
+
+                    <label for="jobID">Occupation: </label>
+                    <input type="text" name="textJob" autofocus="true" required placeholder="Please enter your job" class="jobID">
+                    
+                    <br> <br>
+
+                    <button class="submitPersonID" onclick="addPerson(this)" type="button">Submit</button>
+                    <button class="showPersonID" onclick="console.log(person1)" type="button">Show Person</button>
+                </form>
+        </fieldset>
+
+        <br><br>
+
+        
+
+    </body>
+    </html>

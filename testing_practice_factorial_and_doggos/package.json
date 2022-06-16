@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "express": "^4.18.1",
+    "mocha": "^10.0.0"
+  },
+  "name": "testing_practice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests.js --exit",
+    "coverage": "nyc npm test"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nyc": "^15.1.0"
+  }
+}
